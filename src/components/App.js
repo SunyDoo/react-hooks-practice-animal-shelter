@@ -6,7 +6,6 @@ import PetBrowser from "./PetBrowser";
 function App() {
   const [pets, setPets] = useState([]);
   const [filters, setFilters] = useState("all");
-  // console.log(filters)
 
   useEffect(() => {
     fetch("http://localhost:3001/pets")
